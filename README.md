@@ -17,3 +17,6 @@ Features to be implemented
     Add another service provider
     Handle user issues
     Enhance performance of the app
+
+
+![alt text](https://directus.crio.do/assets/c1ecb8f4-e223-4524-9981-b724dae69857?)
