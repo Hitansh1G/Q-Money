@@ -19,6 +19,4 @@ class PortfolioManagerFactoryTest {
     Assertions.assertTrue(PortfolioManagerFactory.getPortfolioManager(restTemplate)
         instanceof PortfolioManagerImpl);
   }
-
-
 }

@@ -17,7 +17,7 @@ class ModuleTwoTest {
   void readStockFromJson() throws Exception {
     //given
     String filename = "assessments/trades.json";
-    List<String> expected = Arrays.asList(new String[]{"MSFT", "CSCO", "CTS"});
+    List<String> expected = Arrays.asList(new String[]{"Microsoft", "Cisco", "CTS"});
 
     //when
     List<PortfolioTrade> trades = PortfolioManagerApplication
@@ -33,17 +33,15 @@ class ModuleTwoTest {
     //given
     PortfolioTrade trade = new PortfolioTrade();
     trade.setPurchaseDate(LocalDate.parse("2010-01-01"));
-    trade.setSymbol("AAPL");
+    trade.setSymbol("Apple");
     String token = "abcd";
     //when
     String tiingoUrl = PortfolioManagerApplication
             .prepareUrl(trade, LocalDate.parse("2010-01-10"), token);
 
     //then
-    String uri = "https://api.tiingo.com/tiingo/daily/AAPL/prices?startDate=2010-01-01&endDate=2010-01-10&token=abcd";
+    String uri = "https://api.tiingo.com/tiingo/daily/Apple/prices?startDate=2010-01-01&endDate=2010-01-10&token=abcd";
 
     Assertions.assertEquals(tiingoUrl, uri);
   }
-
-
 }
