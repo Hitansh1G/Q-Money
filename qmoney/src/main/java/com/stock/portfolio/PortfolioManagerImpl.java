@@ -1,13 +1,13 @@
 
-package com.crio.warmup.stock.portfolio;
+package com.stock.portfolio;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 
 
-import com.crio.warmup.stock.dto.AnnualizedReturn;
-import com.crio.warmup.stock.dto.Candle;
-import com.crio.warmup.stock.dto.PortfolioTrade;
-import com.crio.warmup.stock.dto.TiingoCandle;
+import com.stock.dto.AnnualizedReturn;
+import com.stock.dto.Candle;
+import com.stock.dto.PortfolioTrade;
+import com.stock.dto.TiingoCandle;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -16,6 +16,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
 import org.springframework.web.client.RestTemplate;
 
 public class PortfolioManagerImpl implements PortfolioManager {
@@ -94,7 +95,7 @@ public class PortfolioManagerImpl implements PortfolioManager {
   }
 
   private AnnualizedReturn calculateAnnualizedReturns(LocalDate endDate, PortfolioTrade trade,
-      Double buyPrice, Double sellPrice) {
+                                                      Double buyPrice, Double sellPrice) {
     double total_num_years = DAYS.between(trade.getPurchaseDate(), endDate) / 365.2422;
     double totalReturns = (sellPrice - buyPrice) / buyPrice;
     double annualized_returns = Math.pow((1.0 + totalReturns), (1.0 / total_num_years)) - 1;

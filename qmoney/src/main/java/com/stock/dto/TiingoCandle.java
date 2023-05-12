@@ -1,5 +1,5 @@
 
-package com.crio.warmup.stock.dto;
+package com.stock.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.LocalDate;

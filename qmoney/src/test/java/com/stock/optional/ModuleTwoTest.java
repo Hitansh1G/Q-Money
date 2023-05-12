@@ -1,8 +1,8 @@
 
-package com.crio.warmup.stock.optional;
+package com.stock.optional;
 
-import com.crio.warmup.stock.PortfolioManagerApplication;
-import com.crio.warmup.stock.dto.PortfolioTrade;
+import com.stock.PortfolioManagerApplication;
+import com.stock.dto.PortfolioTrade;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

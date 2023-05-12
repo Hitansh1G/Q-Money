@@ -1,12 +1,12 @@
 
-package com.crio.warmup.stock.portfolio;
+package com.stock.portfolio;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 
-import com.crio.warmup.stock.dto.AnnualizedReturn;
-import com.crio.warmup.stock.dto.PortfolioTrade;
-import com.crio.warmup.stock.dto.TiingoCandle;
+import com.stock.dto.AnnualizedReturn;
+import com.stock.dto.PortfolioTrade;
+import com.stock.dto.TiingoCandle;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -14,6 +14,7 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

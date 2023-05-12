@@ -1,12 +1,13 @@
 
-package com.crio.warmup.stock;
+package com.stock;
 
-import com.crio.warmup.stock.dto.AnnualizedReturn;
-import com.crio.warmup.stock.dto.PortfolioTrade;
+import com.stock.dto.AnnualizedReturn;
+import com.stock.dto.PortfolioTrade;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

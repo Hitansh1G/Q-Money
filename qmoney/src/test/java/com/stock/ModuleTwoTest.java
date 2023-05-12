@@ -1,5 +1,5 @@
 
-package com.crio.warmup.stock;
+package com.stock;
 
 import java.util.Arrays;
 import java.util.List;

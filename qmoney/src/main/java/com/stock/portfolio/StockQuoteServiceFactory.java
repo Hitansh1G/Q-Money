@@ -1,4 +1,4 @@
-package com.crio.warmup.stock.portfolio;
+package com.stock.portfolio;
 
 public class StockQuoteServiceFactory {
 

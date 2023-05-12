@@ -1,5 +1,5 @@
 
-package com.crio.warmup.stock.log;
+package com.stock.log;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;

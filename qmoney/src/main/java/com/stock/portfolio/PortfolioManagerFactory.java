@@ -1,5 +1,5 @@
 
-package com.crio.warmup.stock.portfolio;
+package com.stock.portfolio;
 
 import org.springframework.web.client.RestTemplate;
 

@@ -1,5 +1,5 @@
 
-package com.crio.warmup.stock.dto;
+package com.stock.dto;
 
 import java.time.LocalDate;
 
